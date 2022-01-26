@@ -6,12 +6,13 @@ import thunk from "redux-thunk";
 
 import { App } from "./components/App";
 import { reducers } from "./reducers";
+import App2 from "./components/App2";
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <App2 />
   </Provider>,
   document.getElementById("root")
 );
